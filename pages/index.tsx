@@ -10,7 +10,7 @@ const HomePage: NextPageWithLayout = () => {
       data={{
         title: "Quynh's Portfolio | Le Nhat Quynh",
         description: "Hi, welcome to my website. My name is Le Nhat Quynh and I'm frontend developer. ",
-        url: "https://next-js-app-sage.vercel.app/",
+        url: "https://next-js-app-eta.vercel.app/",
         thumbnailUrl: "https://res.cloudinary.com/dckopw91s/image/upload/v1661540209/next-app/avt_lpdgxb.jpg"
       }}
     />
