@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter, LinkedIn } from "@mui/icons-material";
+import { Facebook, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
 import { Box, Icon, Stack, Typography } from "@mui/material";
 
 export function Footer() {
@@ -13,7 +13,7 @@ export function Footer() {
       <Stack direction="row" justifyContent="center">
         {socialLinks.map((link, index: number) => (
           <Box key={index} component="a" href={link.url} target="_blank" rel="noopener noreferrer" p={2}>
-            <Icon component={link.icon} sx={{ fontSize: '48px' }} />
+            <Icon component={link.icon} sx={{ fontSize: '48px', color: '#21243D' }} />
           </Box>
         ))}
       </Stack>

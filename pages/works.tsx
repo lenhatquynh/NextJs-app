@@ -1,13 +1,16 @@
 import { MainLayout } from "@/components/layout";
+import { Box, Container, Typography } from "@mui/material";
 
 export interface WorksPageProps {
 }
 
-export default function WorksPage (props: WorksPageProps) {
+export default function WorksPage(props: WorksPageProps) {
   return (
-    <div>
-      WorksPage
-    </div>
+    <Box>
+      <Container>
+        <Typography variant="h3" color={'secondary'}> Developing...</Typography>
+      </Container>
+    </Box>
   );
 }
 WorksPage.Layout = MainLayout
