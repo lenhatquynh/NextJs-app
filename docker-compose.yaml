@@ -1,0 +1,38 @@
+version: '3.9'
+services:
+  next-app-setup:
+    container_name: next-app-setup
+    volumes:
+      - ./:/app/
+    build: .
+
+  next-app-dev:
+    container_name: next-app-dev
+    depends_on:
+      - next-app-setup
+    volumes:
+      - ./:/app/
+    build: .
+    command: dev
+    ports:
+      - 3000:3000
+
+  next-app-build:
+    container_name: next-app-build
+    depends_on:
+      - next-app-setup
+    volumes:
+      - ./:/app/
+    build: .
+    command: build
+
+  next-app-start:
+    container_name: next-app-start
+    depends_on:
+      - next-app-setup
+    volumes:
+      - ./:/app/
+    build: .
+    command: start
+    ports:
+      - 3000:3000
